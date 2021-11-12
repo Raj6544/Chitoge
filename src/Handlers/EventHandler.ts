@@ -23,9 +23,9 @@ export default class EventHandler {
 							.map((jid) => `@${jid.split("@")[0]}`)
 							.join(", ")}`
 					: event.action === "remove"
-					? `Goodbye *@${
+					? `Bye *@${
 							event.participants[0].split("@")[0]
-					  }* 👋🏻, we're probably not gonna miss you.`
+					  }* 👋🏻, we'll miss you.`
 					: `Ara Ara, looks like *@${
 							event.participants[0].split("@")[0]
 					  }* got ${this.client.util.capitalize(event.action)}d${
